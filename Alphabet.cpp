@@ -16,3 +16,8 @@ bool Alphabet::is_valid_input(const string & str) {
     }
     return true;
 }
+
+vector<char> Alphabet::get_symbols() {
+    vector<char> symbols = this->bst->inorder();
+    return symbols;
+}

@@ -43,3 +43,17 @@ void BST::insert(char key) {
 bool BST::search(char key) {
     return search(root, key);
 }
+
+vector<char> BST::inorder() {
+    vector<char> result;
+    inorder(root, result);
+    return result;
+}
+
+void BST::inorder(Node* node, vector<char>& result) {
+    if (node == nullptr) return;
+
+    inorder(node->left, result);
+    result.push_back(node->key);
+    inorder(node->right, result);
+}

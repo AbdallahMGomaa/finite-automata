@@ -16,6 +16,7 @@ private:
 public:
     Alphabet(BST* bst);
     bool is_valid_input(const string & str);
+    vector<char> get_symbols();
 };
 
 

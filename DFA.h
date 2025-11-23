@@ -8,7 +8,7 @@
 #include <vector>
 #include "Alphabet.h"
 
-#include "state.h"
+#include "State.h"
 
 using namespace std;
 

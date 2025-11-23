@@ -2,7 +2,7 @@
 
 #include "Alphabet.h"
 #include "DFA.h"
-#include "state.h"
+#include "State.h"
 
 int main() {
     // first DFA is what was defined in lecture 2 page 24, a DFA to check if the number of 1s in a string is divisible by 3

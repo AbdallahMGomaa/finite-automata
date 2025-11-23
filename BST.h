@@ -5,6 +5,9 @@
 #ifndef DFA_BST_H
 #define DFA_BST_H
 
+#include <vector>
+using namespace std;
+
 struct Node {
     int key;
     Node* left;
@@ -18,9 +21,11 @@ class BST {
     Node* insert(Node* node, char key);
 
     bool search(Node* node, char key);
+    void inorder(Node* node, vector<char>& result);
 public:
     void insert(char key);
     bool search(char key);
+    vector<char> inorder();
 };
 
 

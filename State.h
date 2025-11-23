@@ -12,6 +12,7 @@ class State {
     string name;
 public:
     State(const string &name);
+    string get_name();
 };
 
 #endif //STATE_H
