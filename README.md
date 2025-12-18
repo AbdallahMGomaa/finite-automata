@@ -32,3 +32,7 @@ make
 ```bash
 g++ test_DFA.cpp Alphabet.cpp BST.cpp DFA.cpp State.cpp -o test_DFA
 ```
+
+```bash
+g++ NFA_to_DFA.cpp Alphabet.cpp BST.cpp DFA.cpp NFA.cpp State.cpp -o NFA_to_DFA
+```
