@@ -28,6 +28,11 @@ make
 ./NFA_to_DFA
 ```
 
+### 4. run the test_lexer executable
+```bash
+./test_lexer
+```
+
 ### (Optional) run using gnu g++
 ```bash
 g++ test_DFA.cpp Alphabet.cpp BST.cpp DFA.cpp State.cpp -o test_DFA

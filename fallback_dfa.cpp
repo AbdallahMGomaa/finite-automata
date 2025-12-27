@@ -44,7 +44,6 @@ bool FallbackDFA::process_string(const string &input)
         L++;
         R = L;
     }
-    cout << endl;
     return true;
 }
 
