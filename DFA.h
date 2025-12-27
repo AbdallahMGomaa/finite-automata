@@ -14,15 +14,20 @@ using namespace std;
 
 
 class DFA {
-    vector<State*> states;
-    Alphabet *alphabet;
-    map<pair<State*, char>, State*> transitions;
-    State* start_state;
-    vector<State*> accept_states;
+    protected:
+        vector<State*> states;
+        Alphabet *alphabet;
+        map<pair<State*, char>, State*> transitions;
+        State* start_state;
+        vector<State*> accept_states;
     public:
-    DFA(const vector<State*>& states, Alphabet* alphabet, const map<pair<State*, char>, State*> &transitions,
-        State* start_state, const vector<State*> &accept_states);
-    bool process_string(const string &input);
+        DFA(const DFA*);
+        DFA(const vector<State*>& states, Alphabet* alphabet, const map<pair<State*, char>, State*> &transitions,
+            State* start_state, const vector<State*> &accept_states);
+        bool process_string(const string &input);
+        vector<State*> get_states();
+        vector<State*> get_accept_states();
+
 };
 
 

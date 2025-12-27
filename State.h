@@ -5,6 +5,7 @@
 #ifndef STATE_H
 #define STATE_H
 #include <string>
+#include <vector>
 
 using namespace std;
 
